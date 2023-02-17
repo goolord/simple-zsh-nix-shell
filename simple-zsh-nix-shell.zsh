@@ -35,7 +35,7 @@ nix() {
       fi
       ;;
     *)
-      command nix "$@";;
+      command nix "$subcommand" "$@";;
   esac
 }
 
