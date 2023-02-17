@@ -9,5 +9,5 @@ if ([ ! -z ${NIX_GCROOT+x} ] || [ ! -z ${IN_NIX_SHELL+x} ]) && [ -z ${MANUALLY_E
   if [[ -f $NS_SCRIPT ]]; then
     source $NS_SCRIPT
   fi
-  zsh
+  zsh; exit
 fi
