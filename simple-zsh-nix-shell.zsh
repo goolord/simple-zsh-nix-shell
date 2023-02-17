@@ -18,6 +18,10 @@ check_arg() {
 }
 
 nix() {
+  if [ $# -lt "1" ]; then
+    command nix "$@"
+    return
+  fi
   subcommand="$1"
   shift
   case $subcommand in
