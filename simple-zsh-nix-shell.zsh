@@ -17,40 +17,4 @@ check_arg() {
   done
 }
 
-nix() {
-  if [ $# -lt "1" ]; then
-    command nix "$@"
-    return
-  fi
-  subcommand="$1"
-  shift
-  case $subcommand in
-    develop|shell|run)
-      has_arg=$(check_arg "--command" "$@")
-      if [ has_arg != "1" ];
-      then
-        command nix "$subcommand" "$@" --command zsh
-      else
-        command nix "$subcommand" "$@"
-      fi
-      ;;
-    *)
-      command nix "$subcommand" "$@";;
-  esac
-}
-
-nix-shell() {
-  case $@ in
-    "")
-      has_arg=$(check_arg "--run" "$@")
-      if [ has_arg != "1" ];
-      then
-        command nix-shell --run zsh
-      else
-        command nix-shell "$@"
-      fi
-      ;;
-    *)
-      command nix-shell "$@";;
-  esac
-}
+export SIMPLE_ZSH_NIX_SHELL_BASH=${0:A:h}/bash.sh
