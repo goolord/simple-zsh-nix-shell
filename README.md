@@ -3,7 +3,7 @@
 - makes nix shells drop you into zsh by default
 - when you exit from the zsh nix shell, you will drop back into the invoking zsh shell, so if you need to go into bash for whatver reason invoke `bash` from the zsh shell.
 
-<img width="856" alt="image" src="https://user-images.githubusercontent.com/24906808/219564876-d184602c-069d-4132-a1c6-a69c8453a8b9.png">
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/24906808/219745149-729aab07-1b66-45fa-b491-9ecf217407b6.png">
 
 # install
 `source simple-zsh-nix-shell.zsh` manually or with a plugin manager
