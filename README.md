@@ -8,7 +8,7 @@
 # install
 `source simple-zsh-nix-shell.zsh` manually or with a plugin manager
 
-add this to your `~/.bashrc` to land in zsh your first time entering bash in a nix shell. this is slightly less hacky that a wrapper around nix/nix-shell imo
+add this to your `~/.bashrc` to land in zsh your first time entering bash in a nix shell. this is considerably less hacky than a wrapper around nix/nix-shell imo
 ```bash
 if [ ! -z ${SIMPLE_ZSH_NIX_SHELL_BASH+x} ] ;
   then source $SIMPLE_ZSH_NIX_SHELL_BASH
