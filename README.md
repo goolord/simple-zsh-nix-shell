@@ -6,11 +6,8 @@
 <img width="100%" alt="image" src="https://user-images.githubusercontent.com/24906808/219745149-729aab07-1b66-45fa-b491-9ecf217407b6.png">
 
 # install
-`source simple-zsh-nix-shell.zsh` manually or with a plugin manager
+`source simple-zsh-nix-shell.zsh`  manually in `$ZDOTDIR/.zshrc`, or with a zsh plugin manager
+this plugin sets `$RPS1` to show that you're in a nix shell when `$IN_NIX_SHELL` is defined, and exports the script to be run by the bash plugin
 
-add this to your `~/.bashrc` to land in zsh your first time entering bash in a nix shell. this is considerably less hacky than a wrapper around nix/nix-shell imo
-```bash
-if [ ! -z ${SIMPLE_ZSH_NIX_SHELL_BASH+x} ] ;
-  then source $SIMPLE_ZSH_NIX_SHELL_BASH
-fi
-```
+`source simple-zsh-nix-shell.bash` manually in `$HOME/.bashrc`, or with a bash plugin manager
+this plugin drops you into a zsh shell when you first enter a nix shell
