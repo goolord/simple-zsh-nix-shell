@@ -6,6 +6,8 @@
 <img width="100%" alt="image" src="https://user-images.githubusercontent.com/24906808/219745149-729aab07-1b66-45fa-b491-9ecf217407b6.png">
 
 # install
+**it is necessary** to install both plugins to achieve the full functionality of this plugin
+
 `source simple-zsh-nix-shell.zsh`  manually in `$ZDOTDIR/.zshrc`, or with a zsh plugin manager
 this plugin sets `$RPS1` to show that you're in a nix shell when `$IN_NIX_SHELL` is defined, and exports the script to be run by the bash plugin
 
