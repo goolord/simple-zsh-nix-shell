@@ -12,4 +12,4 @@
 This plugin sets `$RPS1` to show that you're in a nix shell when `$IN_NIX_SHELL` is defined, and exports the script to be run by the bash plugin
 
 `source simple-zsh-nix-shell.bash` manually in `$HOME/.bashrc`, or with a bash plugin manager  
-This plugin drops you into a zsh shell when you first enter a nix shell
+This plugin drops you into a zsh shell when you first enter a nix shell, and defines the `$IN_NIX_SHELL` environment variable
