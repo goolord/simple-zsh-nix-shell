@@ -8,8 +8,8 @@
 # Install
 **it is necessary** to install both plugins to achieve the full functionality of this plugin
 
-`source simple-zsh-nix-shell.zsh`  manually in `$ZDOTDIR/.zshrc`, or with a zsh plugin manager
-this plugin sets `$RPS1` to show that you're in a nix shell when `$IN_NIX_SHELL` is defined, and exports the script to be run by the bash plugin
+`source simple-zsh-nix-shell.zsh`  manually in `$ZDOTDIR/.zshrc`, or with a zsh plugin manager  
+This plugin sets `$RPS1` to show that you're in a nix shell when `$IN_NIX_SHELL` is defined, and exports the script to be run by the bash plugin
 
-`source simple-zsh-nix-shell.bash` manually in `$HOME/.bashrc`, or with a bash plugin manager
-this plugin drops you into a zsh shell when you first enter a nix shell
+`source simple-zsh-nix-shell.bash` manually in `$HOME/.bashrc`, or with a bash plugin manager  
+This plugin drops you into a zsh shell when you first enter a nix shell
